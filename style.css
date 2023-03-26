@@ -5,7 +5,7 @@
 body {
   margin: 1rem 1rem 0 1rem;
   padding: 0;
-  background-color: #e8d2ec;
+  background: #e8d2ec;
   font-family: Futara, Serif;
 }
 .menu {
@@ -22,8 +22,8 @@ h2 {
   font-size: 1.5rem;
 }
 .photo {
-  width: 8em;
-  height: 12em;
+  width: 9.5em;
+  height: 9.5em;
   margin: 0.2em 0;
 }
 @media all and (max-width: 1200px) {
@@ -36,7 +36,7 @@ h2 {
     font-size: 4rem;
   }
   .photo {
-    width: 7em;
+    width: 10.5em;
     height: 10.5em;
   }
 }
@@ -49,7 +49,7 @@ h2 {
     font-size: 1.3rem;
   }
   .photo {
-    width: 8em;
+    width: 12em;
     height: 12em;
   }
 }
@@ -62,13 +62,13 @@ h2 {
     font-size: 1rem;
   }
   .photo {
-    width: 7em;
+    width: 10.5em;
     height: 10.5em;
   }
 }
 @media all and (max-width: 450px) {
   .photo {
-    width: 6em;
+    width: 9em;
     height: 9em;
   }
 }
