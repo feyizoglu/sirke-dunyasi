@@ -8,9 +8,6 @@ body {
   background: #e8d2ec;
   font-family: Futara, Serif;
 }
-.menu {
-  margin: 0;
-}
 
 h2 {
   font-family: "Great Vibes", cursive;
@@ -26,9 +23,20 @@ h2 {
   height: 9.5em;
   margin: 0.2em 0;
 }
+
+.main-photo {
+  border-radius: 30% 0;
+  width: 500px;
+  box-shadow: 25px 25px rgb(122, 172, 57);
+}
+
 @media all and (max-width: 1200px) {
   h2 {
     font-size: 4.5rem;
+  }
+  .main-photo {
+    width: 400px;
+    box-shadow: 20px 20px rgb(122, 172, 57);
   }
 }
 @media all and (max-width: 992px) {
@@ -38,6 +46,10 @@ h2 {
   .photo {
     width: 10.5em;
     height: 10.5em;
+  }
+  .main-photo {
+    width: 300px;
+    box-shadow: 20px 20px rgb(122, 172, 57);
   }
 }
 
@@ -52,6 +64,10 @@ h2 {
     width: 12em;
     height: 12em;
   }
+  .main-photo {
+    width: 400px;
+    box-shadow: 20px 20px rgb(122, 172, 57);
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -64,6 +80,10 @@ h2 {
   .photo {
     width: 10.5em;
     height: 10.5em;
+  }
+  .main-photo {
+    width: 350px;
+    box-shadow: 15px 15px rgb(122, 172, 57);
   }
 }
 @media all and (max-width: 450px) {
@@ -84,4 +104,8 @@ h4 {
 
 .btn-text {
   color: #2406cf;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
 }

@@ -5,7 +5,7 @@ const sirkeButton = document.querySelector("#sirke"); //Sirkeler
 // const iletisimButton = document.querySelector("#iletisim");
 const bodybutton = document.querySelector(".section-center");
 
-// sayfaButton.addEventListener("click", run);
+sayfaButton.addEventListener("click", run);
 sirkeButton.addEventListener("click", sirkeFunc);
 // iletisimButton.addEventListener("click", run);
 
