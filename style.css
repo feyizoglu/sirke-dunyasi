@@ -74,9 +74,8 @@ h2 {
 }
 
 .btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* position: fixed; */
+  overflow: hidden;
 }
 
 h4 {
