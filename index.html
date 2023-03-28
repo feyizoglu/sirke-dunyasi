@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="mx-0">
     <div class="container">
       <div class="title">
         <h2>Sevilay'ın Sirke Dünyası</h2>
@@ -31,16 +31,16 @@
       <!-- Buttons-->
       <div class="btn-container">
         <div class="d-flex justify-content-around">
-          <button id="anaSayfa" class="btn btn-light button">
+          <button id="anaSayfa" class="btn btn-outline-dark button">
             Ana Sayfa
             <span class="material-symbols-outlined icon"> home </span>
           </button>
-          <button id="sirke" class="btn btn-light button">
+          <button id="sirke" class="btn btn-outline-dark button sirke">
             Doğal Sirkeler<span class="material-symbols-outlined icon">
               air_freshener
             </span>
           </button>
-          <button id="iletisim" class="btn btn-light button">
+          <button id="iletisim" class="btn btn-outline-dark button">
             İletişim<span class="material-symbols-outlined icon">
               smartphone
             </span>
@@ -48,7 +48,7 @@
         </div>
       </div>
       <!-- Section after buttons -->
-      <div class="section-center row">
+      <div class="section-center row mb-5">
         <div
           class="col-12 mt-4 d-flex flex-column align-items-center flex-md-row justify-content-md-between"
         >
@@ -63,12 +63,41 @@
           <img class="main-photo" src="./imgs/mainpage/2.PNG" alt="" />
         </div>
       </div>
-      <footer class="mt-5">fgdfgf</footer>
     </div>
+    <footer>
+      <ul class="nav justify-content-center border-bottom py-3 my-3">
+        <li>
+          <button class="btn btn-link text-white" id="anaSayfa2">
+            Ana Sayfa
+          </button>
+        </li>
+        <li>
+          <button class="btn btn-link text-white" id="sirke2">
+            Doğal Sirkeler
+          </button>
+        </li>
+        <li>
+          <button class="btn btn-link text-white" id="iletisim2">
+            İletişim
+          </button>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary pb-3 m-0 text-white-50">
+        Created by
+        <a target="_blank" href="https://www.linkedin.com/in/tolgahanfeyizoglu/"
+          ><img
+            width="20em"
+            src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+            alt=""
+        /></a>
+        <a target="_blank" href="https://github.com/feyizoglu"
+          ><img
+            width="20em"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1200px-Font_Awesome_5_brands_github.svg.png"
+            alt=""
+        /></a>
+      </p>
+    </footer>
     <script type="module" src="./script.js"></script>
   </body>
 </html>
-
-<!-- Ana sayfaya home iconu
-Sirkeye şişe/sirke icon'u
-İletişime telefon iconu -->

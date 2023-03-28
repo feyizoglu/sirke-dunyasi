@@ -1,16 +1,21 @@
 import { menu } from "./menu.js";
 
-// const sayfaButton = document.querySelector("#anaSayfa"); //AnaSayfa Butonu
+const sayfaButton = document.querySelector("#anaSayfa"); //AnaSayfa Butonu
+const sayfaButton2 = document.querySelector("#anaSayfa2"); //AnaSayfa Butonu
 const sirkeButton = document.querySelector("#sirke"); //Sirkeler
-// const iletisimButton = document.querySelector("#iletisim");
+const sirkeButton2 = document.querySelector("#sirke2"); //Sirkeler
+const iletisimButton = document.querySelector("#iletisim"); //İletişim
+const iletisimButton2 = document.querySelector("#iletisim2"); //İletişim
 const bodybutton = document.querySelector(".section-center");
 
-sayfaButton.addEventListener("click", run);
+sayfaButton.addEventListener("click", sirkeFunc);
+sayfaButton2.addEventListener("click", sirkeFunc);
 sirkeButton.addEventListener("click", sirkeFunc);
-// iletisimButton.addEventListener("click", run);
+sirkeButton2.addEventListener("click", sirkeFunc);
+iletisimButton.addEventListener("click", sirkeFunc);
+iletisimButton2.addEventListener("click", sirkeFunc);
 
 const sirke = [];
-
 menu.forEach((item) => {
   sirke.push(item);
 });
@@ -72,13 +77,55 @@ function createArray(array) {
   });
 }
 
+function createMain() {
+  //Creating First Div
+  let div1 = document.createElement("div");
+  let parentElement = document.querySelector(".section-center");
+  div1.className =
+    "col-12 mt-4 d-flex flex-column align-items-center flex-md-row justify-content-md-between";
+  parentElement.appendChild(div1);
+
+  // Creating 2 Images
+  let img1 = document.createElement("img");
+  let img2 = document.createElement("img");
+  img1.className = "main-photo";
+  img2.className = "main-photo mt-5 mt-md-0";
+  img1.src = "./imgs/mainpage/1.PNG";
+  img2.src = "./imgs/mainpage/0.PNG";
+  div1.appendChild(img1);
+  div1.appendChild(img2);
+
+  //Creating Second Div
+  let div2 = document.createElement("div");
+  div2.className = "col-12 mt-5 d-flex justify-content-center";
+  parentElement.appendChild(div2);
+
+  // Creating last Image
+  let img3 = document.createElement("img");
+  img3.className = "main-photo";
+  img3.src = "./imgs/mainpage/2.PNG";
+  div2.appendChild(img3);
+}
+
+function openLink() {
+  window.open("https://www.instagram.com/sevilayin_sirke_dunyasi", "_blank");
+}
+
 //Sirke function
 function sirkeFunc() {
-  while (bodybutton.hasChildNodes()) {
-    bodybutton.removeChild(bodybutton.firstChild);
-  }
-  if (this.id == "sirke") {
-    createArray(sirke);
-    sirkeButton.className = "btn btn-outline-dark button";
+  if (this.id == "iletisim" || this.id == "iletisim2") {
+    openLink();
+    iletisimButton.className = "btn btn-outline-dark button";
+  } else {
+    while (bodybutton.hasChildNodes()) {
+      bodybutton.removeChild(bodybutton.firstChild);
+    }
+    if (this.id == "sirke" || this.id == "sirke2") {
+      createArray(sirke);
+      sirkeButton.className = "btn btn-outline-dark button";
+    } else if (this.id == "anaSayfa" || this.id == "anaSayfa2") {
+      createMain(anaSayfa);
+      sayfaButton.className = "btn btn-outline-dark button";
+    }
   }
 }
