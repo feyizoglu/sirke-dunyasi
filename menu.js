@@ -102,7 +102,7 @@ export const menu = [
     title: "Hanımeli Sirkesi",
     category: ["500ml", "250ml"],
     price: ["₺ 120.00", "₺ 65.00"],
-    img: ["./imgs/SirkeImgs/hanımeli1.png", "./imgs/SirkeImgs/hanımeli2.png"],
+    img: ["./imgs/SirkeImgs/hanimeli1.png", "./imgs/SirkeImgs/hanimeli2.png"],
   },
   {
     id: 16,
@@ -116,7 +116,7 @@ export const menu = [
     title: "Hayıt Sirkesi",
     category: ["500ml", "250ml"],
     price: ["₺ 70.00", "₺ 40.00"],
-    img: ["./imgs/SirkeImgs/hayıt1.png", "./imgs/SirkeImgs/hayıt2.png"],
+    img: ["./imgs/SirkeImgs/hayit1.png", "./imgs/SirkeImgs/hayit2.png"],
   },
   {
     id: 18,
