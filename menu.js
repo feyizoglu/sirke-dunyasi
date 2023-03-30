@@ -97,7 +97,13 @@ export const menu = [
     price: ["₺ 80.00", "₺ 45.00"],
     img: ["./imgs/SirkeImgs/gilaboru1.png", "./imgs/SirkeImgs/gilaboru2.png"],
   },
-
+  {
+    id: 15,
+    title: "Hanımeli Sirkesi",
+    category: ["500ml", "250ml"],
+    price: ["₺ 120.00", "₺ 65.00"],
+    img: ["./imgs/SirkeImgs/hanimeli1.png", "./imgs/SirkeImgs/hanimeli2.png"],
+  },
   {
     id: 16,
     title: "Hatmi Çiçeği Sirkesi",
