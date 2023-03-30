@@ -1,13 +1,14 @@
 import { menu } from "./menu.js";
 
-const sayfaButton = document.querySelector("#anaSayfa"); //AnaSayfa Butonu
-const sayfaButton2 = document.querySelector("#anaSayfa2"); //AnaSayfa Butonu
-const sirkeButton = document.querySelector("#sirke"); //Sirkeler
-const sirkeButton2 = document.querySelector("#sirke2"); //Sirkeler
-const iletisimButton = document.querySelector("#iletisim"); //İletişim
-const iletisimButton2 = document.querySelector("#iletisim2"); //İletişim
+const sayfaButton = document.querySelector("#anaSayfa"); //MainPage Button
+const sayfaButton2 = document.querySelector("#anaSayfa2"); //MainPage Link
+const sirkeButton = document.querySelector("#sirke"); //Sirke
+const sirkeButton2 = document.querySelector("#sirke2"); //Sirke
+const iletisimButton = document.querySelector("#iletisim"); //Contact
+const iletisimButton2 = document.querySelector("#iletisim2"); //contact
 const bodybutton = document.querySelector(".section-center");
 
+//Events
 sayfaButton.addEventListener("click", sirkeFunc);
 sayfaButton2.addEventListener("click", sirkeFunc);
 sirkeButton.addEventListener("click", sirkeFunc);
@@ -15,6 +16,7 @@ sirkeButton2.addEventListener("click", sirkeFunc);
 iletisimButton.addEventListener("click", sirkeFunc);
 iletisimButton2.addEventListener("click", sirkeFunc);
 
+//Sirke Cards Array
 const sirke = [];
 menu.forEach((item) => {
   sirke.push(item);
@@ -22,11 +24,39 @@ menu.forEach((item) => {
 
 //Card Function
 function createArray(array) {
+  //Creating Search Button
+  let parentElement = document.querySelector(".section-center");
+  let searchButton = document.createElement("div");
+  searchButton.className = "mt-3 d-flex flex-column me-3";
+  parentElement.appendChild(searchButton);
+
+  //Creating Input
+  let searchInput = document.createElement("input");
+  searchInput.className =
+    "fs-3 text ps-4 border border-success rounded-pill rounded-pill";
+  searchInput.type = "search";
+  searchInput.id = "search";
+  searchInput.placeholder = "Sirke Ara";
+  searchButton.appendChild(searchInput);
+  //Users Search Function
+  searchInput.addEventListener("input", filterSirke);
+  function filterSirke() {
+    const filter = searchInput.value.toLowerCase();
+    const listItems = document.querySelectorAll(".sirkeCard");
+    listItems.forEach((item) => {
+      let text = item.textContent;
+      if (text.toLowerCase().includes(filter)) {
+        item.style.display = "";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+  //Creating Cards
   array.map((item) => {
-    //Creating Card
+    //Creating Card div
     let div1 = document.createElement("div");
-    let parentElement = document.querySelector(".section-center");
-    div1.className = "col-lg-4 col-md-6 col-sm-12 mt-4 ms-0";
+    div1.className = "col-lg-4 col-md-6 col-sm-12 mt-4 ms-0 sirkeCard";
     parentElement.appendChild(div1);
 
     //Border

@@ -38,6 +38,24 @@ h2 {
   font-size: 1.5em;
 }
 
+h4 {
+  color: #e00a00;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: rgb(248, 121, 242);
+}
+#search {
+  background-color: rgb(243, 221, 221);
+}
+
+/* Responsive With CSS */
+
 @media all and (max-width: 1200px) {
   h2 {
     font-size: 4.5rem;
@@ -108,24 +126,4 @@ h2 {
     width: 9em;
     height: 9em;
   }
-}
-
-.btn-container {
-  overflow: hidden;
-}
-
-h4 {
-  color: #e00a00;
-}
-
-.btn-text {
-  color: #2406cf;
-}
-.icon {
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  background-color: rgb(248, 121, 242);
 }
