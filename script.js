@@ -78,11 +78,16 @@ function createArray(array) {
 }
 
 function createMain() {
+  //Creating Paragraph
+  let para = document.createElement("p");
+  let parentElement = document.querySelector(".section-center");
+  para.className = "firstP col-12 mt-4 px-5 text text-center fst-italic";
+  para.innerText = `Sitemize hoşgeldiniz. "Doğal Sirkeler" butonuna basarak sirkelerimizi görüntüleyebilirsiniz. Sipariş vermek için "İletişim" butonuna basarak Instagram sayfamızı ziyaret edebilir ve mesaj gönderebilirsiniz.`;
+  parentElement.appendChild(para);
   //Creating First Div
   let div1 = document.createElement("div");
-  let parentElement = document.querySelector(".section-center");
   div1.className =
-    "col-12 mt-4 d-flex flex-column align-items-center flex-md-row justify-content-md-between";
+    "col-12 mt-2 d-flex flex-column align-items-center flex-md-row justify-content-md-between";
   parentElement.appendChild(div1);
 
   // Creating 2 Images

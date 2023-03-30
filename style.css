@@ -5,7 +5,12 @@
 body {
   margin: 1rem 1rem 0 1rem;
   padding: 0;
-  background: #e8d2ec;
+
+  background-image: linear-gradient(
+    180deg,
+    rgb(245, 217, 217),
+    rgb(248, 133, 242)
+  );
   font-family: Futara, Serif;
 }
 
@@ -29,6 +34,9 @@ h2 {
   width: 500px;
   box-shadow: 25px 25px rgb(122, 172, 57);
 }
+.firstP {
+  font-size: 1.5em;
+}
 
 @media all and (max-width: 1200px) {
   h2 {
@@ -51,6 +59,9 @@ h2 {
     width: 300px;
     box-shadow: 20px 20px rgb(122, 172, 57);
   }
+  .firstP {
+    font-size: 1.4em;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -67,6 +78,9 @@ h2 {
   .main-photo {
     width: 400px;
     box-shadow: 20px 20px rgb(122, 172, 57);
+  }
+  .firstP {
+    font-size: 1.3em;
   }
 }
 
@@ -85,6 +99,9 @@ h2 {
     width: 350px;
     box-shadow: 15px 15px rgb(122, 172, 57);
   }
+  .firstP {
+    font-size: 1.2em;
+  }
 }
 @media all and (max-width: 450px) {
   .photo {
@@ -94,7 +111,6 @@ h2 {
 }
 
 .btn-container {
-  /* position: fixed; */
   overflow: hidden;
 }
 
@@ -111,5 +127,5 @@ h4 {
 }
 
 footer {
-  background-color: #bb92c2;
+  background-color: rgb(248, 121, 242);
 }
