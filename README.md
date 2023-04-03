@@ -5,3 +5,5 @@ website is also responsive structure.
 
 You can reach to site with this link;
 http://sirkedunyasi.store/
+
+![preview](./sirke.gif)
