@@ -4,6 +4,6 @@ framework Bootstrap was used within the project. The site was designed using Jav
 website is also responsive structure.
 
 You can reach to site with this link;
-http://sirkedunyasi.store/
+https://feyizoglu.github.io/sirke-dunyasi/
 
 ![preview](./sirke.gif)
